@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(135deg, black, rgb(90, 75, 75));
+    color: white;
+}
+
+/* MAIN CARD */
+.container{
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    height: 600px;
+    width: 500px;
+    display: grid;
+    justify-items: center;
+}
+
+/* TITLE */
+.todo{
+    font-size: xx-large;
+    color: honeydew;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+/* INPUT AREA */
+.typearea{
+    border: none;
+    border-radius: 20px;
+    height: 100px;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* ADD BUTTON */
+.add{
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 60px;
+    font-size: medium;
+    color: blanchedalmond;
+    background: rgb(90, 75, 75);
+    cursor: pointer;
+}
+
+.add:hover{ background-color: rgb(57, 54, 54); }
+.add:active{ background-color: rgb(164, 158, 158); }
+
+/* TASK SECTION */
+.taskdisplay{
+    width: 450px;
+    text-align: center;
+}
+
+/* HORIZONTAL SCROLL AREA */
+.eachtask{
+    height: 200px;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.eachtask::-webkit-scrollbar{
+    display: none;
+}
+
+/* TASK CARD */
+.taskbox{
+    position: relative;
+    height: 200px;
+    min-width: 220px;
+    max-width: 220px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px 15px 15px; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* TASK TEXT */
+.taskbox .taskText{
+    color: rgb(90, 75, 75);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6;          /* max lines */
+    -webkit-box-orient: vertical;   /* IMPORTANT */
+    word-wrap: break-word;
+}
+
+/* DELETE BUTTON */
+.taskbox button{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background: red;
+    color: white;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.taskText{
+    color: rgb(90, 75, 75);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+
